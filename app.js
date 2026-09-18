@@ -1,7 +1,4 @@
 
-// ==========================================
-// 1. DATASET SETUP
-// ==========================================
 const students = [
   { id: 1, name: "Alice Johnson", year: 1, course: "Computer Science", grades: [88, 92, 95, 90], enrolled: true },
   { id: 2, name: "Bob Smith", year: 2, course: "Information Technology", grades: [75, 80, 78, 82], enrolled: true },
@@ -35,13 +32,6 @@ const students = [
   { id: 30, name: "No Grades Student", year: 1, course: "Computer Science", grades: [], enrolled: true }
 ];
 
-// ==========================================
-// 2. CORE FUNCTIONS
-// ==========================================
-
-/**
- * Calculates average grade for a single student.
- */
 function getAverageGrade(student) {
   if (!student || typeof student !== "object") return 0;
   if (!Array.isArray(student.grades) || student.grades.length === 0) return 0;
@@ -68,9 +58,7 @@ function getTopStudents(studentsArray, n) {
     .slice(0, n);
 }
 
-/**
- * Groups students by course field using reduce.
- */
+
 function groupByCourse(studentsArray) {
   if (!Array.isArray(studentsArray)) return {};
 
@@ -84,9 +72,7 @@ function groupByCourse(studentsArray) {
   }, {});
 }
 
-/**
- * Returns enrollment breakdown.
- */
+
 function getEnrolledCount(studentsArray) {
   if (!Array.isArray(studentsArray)) return { enrolled: 0, notEnrolled: 0 };
 
@@ -103,9 +89,7 @@ function getEnrolledCount(studentsArray) {
   );
 }
 
-/**
- * Performs case-insensitive student search by name.
- */
+
 function findStudent(studentsArray, name) {
   if (!Array.isArray(studentsArray) || typeof name !== "string" || !name.trim()) {
     return null;
@@ -117,9 +101,6 @@ function findStudent(studentsArray, name) {
   return match ? { ...match } : null;
 }
 
-/**
- * Calculates average grade per course, sorted highest to lowest.
- */
 function getCourseAverages(studentsArray) {
   if (!Array.isArray(studentsArray) || studentsArray.length === 0) return [];
 
@@ -136,9 +117,6 @@ function getCourseAverages(studentsArray) {
   return courseAverages.sort((a, b) => b.averageGrade - a.averageGrade);
 }
 
-/**
- * Generates comprehensive dataset summary report.
- */
 function exportSummary(studentsArray) {
   if (!Array.isArray(studentsArray) || studentsArray.length === 0) {
     return {
@@ -165,10 +143,6 @@ function exportSummary(studentsArray) {
   };
 }
 
-// ==========================================
-// 3. STRETCH GOALS
-// ==========================================
-
 function filterByYear(studentsArray, year) {
   if (!Array.isArray(studentsArray)) return [];
   if (typeof year !== "number" || year <= 0) throw new Error("Year must be a positive number.");
@@ -182,9 +156,6 @@ function sortByName(studentsArray) {
   return [...studentsArray].sort((a, b) => a.name.localeCompare(b.name));
 }
 
-// ==========================================
-// 4. MAIN REPORT EXECUTION
-// ==========================================
 
 function main() {
   console.log("================================================");
