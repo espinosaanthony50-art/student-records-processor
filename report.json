@@ -1,0 +1,13 @@
+{
+  "totalStudents": 3,
+  "overallAverage": 88.33,
+  "topStudent": {
+    "name": "Charlie Brown",
+    "averageGrade": 95.25
+  },
+  "courseBreakdown": [
+    { "course": "BSIS", "averageGrade": 95.25 },
+    { "course": "BSCS", "averageGrade": 88.75 },
+    { "course": "BSIT", "averageGrade": 78.75 }
+  ]
+}
