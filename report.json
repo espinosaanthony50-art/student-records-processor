@@ -1,13 +1,31 @@
 {
-  "totalStudents": 3,
-  "overallAverage": 88.33,
+  "totalStudents": 30,
+  "overallAverageGrade": 82.35,
   "topStudent": {
-    "name": "Charlie Brown",
-    "averageGrade": 95.25
+    "id": 20,
+    "name": "Tony Stark",
+    "year": 1,
+    "course": "Computer Science",
+    "grades": [100, 100, 100, 99],
+    "enrolled": true,
+    "averageGrade": 99.75
   },
   "courseBreakdown": [
-    { "course": "BSIS", "averageGrade": 95.25 },
-    { "course": "BSCS", "averageGrade": 88.75 },
-    { "course": "BSIT", "averageGrade": 78.75 }
+    {
+      "course": "Software Engineering",
+      "averageGrade": 91.07
+    },
+    {
+      "course": "Computer Science",
+      "averageGrade": 82.52
+    },
+    {
+      "course": "Data Science",
+      "averageGrade": 81.3
+    },
+    {
+      "course": "Information Technology",
+      "averageGrade": 77.2
+    }
   ]
 }
