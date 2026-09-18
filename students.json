@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Alice Smith", "year": 1, "course": "BSCS", "grades": [88, 92, 90, 85], "enrolled": true },
+  { "id": 2, "name": "Bob Johnson", "year": 2, "course": "BSIT", "grades": [75, 80, 78, 82], "enrolled": true },
+  { "id": 3, "name": "Charlie Brown", "year": 3, "course": "BSIS", "grades": [95, 98, 92, 96], "enrolled": false }
+]
